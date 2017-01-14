@@ -1,0 +1,53 @@
+@*
+* This template takes a single argument, a String containing a
+* message to display.
+*@
+@(message: String)
+@*
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
+@main("Welcome to Rec Team Captain") {
+	@*
+	* Get an `Html` object by calling the built-in Play welcome
+	* template and passing a `String` message.
+	*@
+
+	<div id='body'>
+		<h1>Rec Team Captain</h1>
+		<p>When I lived in St. Louis I played on a men's softball team.</p>
+		<p>Every Saturday night, I would get a call from the captain to make sure I was going to be at the game on Sunday.</p>
+		<p>I knew he was going to call everyone on the team, and then make more calls finding subs for players who couldn't play.</p>
+		<p>I knew there had to be a better way, so I made Rec Team Captain.</p>
+		<ul class='features'>
+			<lh>Features</lh>
+			<li class='features'>Automatically reminds players of upcoming games</li>
+			<li class='features'>Tracks who is and is not playing</li>
+			<li class='features'>Updates players when schedule changes</li>
+			<li class='features'>Email your whole team</li>
+		</ul>
+		<button class='features' onclick='window.location.pathname = "@routes.AdminController.register()"' >Get Started</button>
+		<h1>About</h1>
+		<p>Rec Team Captain helps you manage your recreational team activities like soccer, softball, or bowling.</p>
+		<p>It automatically reminds players of upcoming events by emailing all your players 4 days before
+			(Premium members can configure when emails are sent).</p>
+		<h3>Getting Started</h3>
+		<dl>
+			<dt>Register</dt>
+			<dd>After filling out the registration information, you will be sent an email with a link to follow. Click on the link in the email and it will take you to the login page.</dd>
+			<dt>Add players</dt>
+			<dd>Click on the Players link to add player's names and emails.<dd>
+			<dt>Add games</dt>
+			<dd>Click on the Games link to add games.</dd>
+		</dl>
+		<h3>New Features</h3>
+		<ul>
+			<li>Premium members can designate reserve players. Reserve players are not sent reminder emails unless a regular player is not playing.</li>
+			<li>Players are sent update emails when a game is changed</li>
+			<li>Team captain can send messages to all players</li>
+			<li>Reminder emails have two links, playing and not playing, so players can indicate if they will be at the game.</li>
+			<li>The games list has a playing status link so you can see who has responded and if they are playing.</li>
+		</ul>
+	</div>
+}

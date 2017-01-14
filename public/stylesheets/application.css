@@ -1,0 +1,141 @@
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  background-color: linen;
+  color: DarkGreen;
+}
+
+#header {
+  padding: 1em;
+}
+
+.login-links {
+  text-align: right;
+  font-size: smaller;
+}  
+
+a.header { color: darkgreen; }
+a.header:visited { color: darkgreen; text-align: right;}
+a.header:hover {color: darkgreen; background-color: palegreen}
+
+p.popup {
+  padding-right: 2em;
+}
+
+table, tr, td, th {
+  border-collapse: collapse;
+  border: 2px solid green;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { 
+  color: #000;
+  text-decoration: none;
+}
+a:visited { 
+  color: #666; 
+  text-decoration: none;
+}
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#menu li {
+  list-style-type: none;
+  margin-left: -2em;
+}
+
+#frame {
+  width: 1000px;
+}
+
+#menu {
+  float: left;
+}
+
+#main {
+  float: left;
+}
+
+#body {
+  float: right;
+  width: 80%;
+  border-left: thin solid black;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+#google_bar {
+	float: right;
+	width: 150px;
+	margin-top: 1em;
+}
+
+#footer {
+  clear: both;
+  padding-bottom: 1em;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+ul.features {
+  list-style-type: none;
+  padding-top: 16px;
+  margin: 0px;
+}
+
+li.features {
+  background-image: url(/images/check_mark.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px; 
+  padding-left: 24px; 
+}
+
+button.features {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+a.features:hover {
+  background-color: white;
+}
+

@@ -1,0 +1,10 @@
+@import models.User
+@(userForm: Form[User])
+
+@main("Registration") {
+	<div id='body'>
+	@helper.form(action = routes.AdminController.register()) {
+		@helper.inputText(userForm("email"))
+	}
+	</div>
+}

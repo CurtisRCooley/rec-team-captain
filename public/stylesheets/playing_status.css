@@ -1,0 +1,24 @@
+#playing {
+  float:left;
+  background: white;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+#not_playing {
+  float:left;
+  background: white;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+#undecided {
+  float: left;
+  background: white;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+#menu {
+  clear: both;
+}
