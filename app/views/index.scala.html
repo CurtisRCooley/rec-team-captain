@@ -9,12 +9,186 @@
 * argument is an `Html` object containing the body of the page.
 *@
 @main("Welcome to Rec Team Captain") {
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="header-content">
+						<div class="header-content-inner">
+							<h1>Rec Team Captain is a recreational team sports organization tool that will help you easily assemble your team for games and activities!</h1>
+							<a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="device-container">
+						<div class="device-mockup iphone6_plus portrait white">
+							<div class="device">
+								<div class="screen">
+										<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+									<img src="@routes.Assets.versioned("images/Clipboard_flat_3D.svg.png")" class="img-responsive" alt="">
+								</div>
+								<div class="button">
+										<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="download" class="download bg-primary text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 class="section-heading">Discover what all the buzz is about!</h2>
+					<p>Our app is available on any mobile device! Download now to get started!</p>
+					<div class="badges">
+						<a class="badge-link" href="#"><img src="@routes.Assets.versioned("images/google-play-badge.svg")" alt=""></a>
+						<a class="badge-link" href="#"><img src="@routes.Assets.versioned("images/app-store-badge.svg")" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="features" class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-heading">
+						<h2>Features</h2>
+						<p class="text-muted">Check out how it saves you time and headaches!</p>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="device-container">
+						<div class="device-mockup iphone6_plus portrait white">
+							<div class="device">
+								<div class="screen">
+										<!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+									<img src="@routes.Assets.versioned("images/Circle-icons-clipboard.svg")" class="img-responsive" alt=""> </div>
+								<div class="button">
+										<!-- You can hook the "home button" to some JavaScript events or just remove it -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="feature-item">
+									<i class="icon-screen-smartphone text-primary"></i>
+									<h3>Team Notifications</h3>
+									<p class="text-muted">Automatically notifies your team of upcoming games or events!</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="feature-item">
+									<i class="icon-camera text-primary"></i>
+									<h3>Team Responses</h3>
+									<p class="text-muted">Instantly know who is planning to show and who is not!</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="feature-item">
+									<i class="icon-lock-open text-primary"></i>
+									<h3>Free to Try</h3>
+									<p class="text-muted">Try for a limited number of games and experience the time it saves!</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="feature-item">
+									<i class="icon-present text-primary"></i>
+									<h3>Graceful Schedule Changes</h3>
+									<p class="text-muted">Schedule or location change? No problem! Automatically notifies all attending players of schedule changes!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="cta">
+		<div class="cta-content">
+			<div class="container">
+				<h2>Stop waiting.<br>Start building.</h2>
+				<a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</section>
+
+	<section id="contact" class="contact bg-primary">
+		<div class="container">
+			<h2>We <i class="fa fa-heart"></i> new friends!</h2>
+			<ul class="list-inline list-social">
+				<li class="social-twitter">
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</li>
+				<li class="social-facebook">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+				</li>
+				<li class="social-google-plus">
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+			<ul class="list-inline">
+				<li>
+					<a href="#">Privacy</a>
+				</li>
+				<li>
+					<a href="#">Terms</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+		<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+		<!-- Theme JavaScript -->
+	<script src="javascripts/new-age.min.js"></script>
+
+
+
+
 	@*
 	* Get an `Html` object by calling the built-in Play welcome
 	* template and passing a `String` message.
 	*@
 
 	<div id='body'>
+
+
+
+
 		<h1>Rec Team Captain</h1>
 		<p>When I lived in St. Louis I played on a men's softball team.</p>
 		<p>Every Saturday night, I would get a call from the captain to make sure I was going to be at the game on Sunday.</p>
